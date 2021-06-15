@@ -1,0 +1,80 @@
+;
+; TeaTxt.DAT
+;
+; Craig Fitzgerald
+;
+; This file contains text strings
+;
+;
+;
+;
+[szUsage,,_DATA]
+TEA   Text file viewing utility   %s                             %s
+
+USAGE:  TEA  [options]
+
+WHERE: [options] are 0 or more of:
+         /Res=file ... File containing resource to use.
+
+
+See online help for more information
+;
+;
+;
+;
+[szHelpMain,,_DATA]
+\\@01F1\\@00 ..... About TEA
+\\@01F2\\@00 ..... TEA Command line options
+\\@01F3\\@00 ..... Creating TEA Resources
+\\@01F4\\@00 ..... Commands in Resource List Window
+\\@01F5\\@00 ..... Commands in Resource View Window
+;
+;
+;
+;
+[szHelpAbout,,_DATA]
+Tea
+;
+;
+;
+;
+[szHelpCreating,,_DATA]
+creating
+;
+;
+;
+;
+[szHelpListKeys,,_DATA]
+Below is a list of command keys available in the Resource list.\n
+\\@01ENTER\\@00 ..... View Resource
+\\@01S\\@00 ......... Save Descriptions
+\\@01L\\@00 ......... Load Descriptions
+\\@01E\\@00 ......... Edit Description
+\\@01R\\@00 ......... Select Random Line
+\\@01Alt-C\\@00 ..... Set colors for List window
+\\@01Alt-M\\@00 ..... Change Screen Mode
+\\@01ESC\\@00 ....... Quit
+;
+;
+;
+;
+[szHelpViewKeys,,_DATA]
+Below is a list of command keys available while viewing a Resource.\n
+\\@01E\\@00 ......... Edit Description
+\\@01S\\@00 ......... Save Descriptions
+\\@01L\\@00 ......... Load Descriptions
+\\@01W\\@00 ......... Write Buffer
+\\@01Ctl-PgUp\\@00 .. Previous Buffer
+\\@01Ctl-PgDn\\@00 .. Next Buffer
+\\@01Alt-W\\@00 ..... Toggle Wrapping
+\\@01Alt-K\\@00 ..... Toggle Kill Blank Lines
+\\@01Alt-L\\@00 ..... Toggle Left Justify
+\\@01Alt-J\\@00 ..... Jump to bookmark
+\\@01Alt-M\\@00 ..... Change screen mode
+\\@01Alt-N\\@00 ..... Toggle Line Numbering
+\\@01Alt-C\\@00 ..... Set colors for View window
+\\@01Alt-#\\@00 ..... Drop Bookmark
+\\@01Alt-S\\@00 ..... Find
+\\@01/\\@00 ......... Find (case sensitive)
+\\@01Shift-F5\\@00 .. Find Next
+\\@01ESC\\@00 ....... List Window

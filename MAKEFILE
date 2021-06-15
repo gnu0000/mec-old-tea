@@ -1,0 +1,31 @@
+DEBUG = FALSE
+
+!IF "$(DEBUG)" == "TRUE"
+COPT = /c /W3 /AL /Od /Zip /nologo
+LOPT = /CO/NOLOGO/NOD/NOE
+LIBS = os2 llibcep GnuLibD
+BIND = rem
+!ELSE
+COPT = /c /W3 /AL /Ox /Grs /Zp /nologo
+LOPT = /E/F/PACKC/NOLOGO/NOD/NOE
+LIBS = os2 llibcep GnuLibO
+BIND = bind $*.exe
+!ENDIF
+
+PROG = tea
+
+all : $(PROG).exe
+
+$(PROG).obj : $(PROG).c
+  cl $(COPT) $*.c
+
+
+TeaTxt.obj: TeaTxt.dat
+   Data2Obj /Verbose $*
+
+
+$(PROG).exe : $(PROG).obj TeaTxt.obj
+  link $* TeaTxt $(LOPT),,NUL,$(LIBS),deffile
+  $(BIND)    
+
+
